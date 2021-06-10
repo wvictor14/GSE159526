@@ -19,3 +19,10 @@ BugReports: https://github.com/wvictor14/GSE159526/issues
 biocViews: ExperimentData, GEO, Genome, Tissue, MethylationArrayData, 
     Homo_sapiens_Data
 Date: 2021-06-10
+Suggests: 
+    BiocStyle,
+    knitr,
+    RefManageR,
+    rmarkdown,
+    sessioninfo
+VignetteBuilder: knitr
