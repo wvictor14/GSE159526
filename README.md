@@ -3,14 +3,8 @@
 
 # GSE159526
 
-<!-- badges: start -->
-
-[![BioC
-status](http://www.bioconductor.org/shields/build/release/bioc/GSE159526.svg)](https://bioconductor.org/checkResults/release/bioc-LATEST/GSE159526)
-<!-- badges: end -->
-
-The goal of `GSE159526` is DNA methylation 850k microarray data on
-placental chorionic villi and cell-sorted samples.
+`GSE159526` is DNA methylation 850k microarray data on placental
+chorionic villi and cell-sorted samples.
 
 ## Installation instructions
 
