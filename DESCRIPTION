@@ -1,18 +1,21 @@
 Package: GSE159526
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Placental cell DNA methylation data from GEO accession GSE159526
+Version: 0.99.0
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Victor",
+           family = "Yuan",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+           email = "vyuan@bcchr.ca",
+           comment = c(ORCID = "0000-0002-3394-998X"))
+Description: Processed DNA methylation data from placental chorionic villi and 
+    matched cell-sorted samples. 
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 URL: https://github.com/wvictor14/GSE159526
 BugReports: https://github.com/wvictor14/GSE159526/issues
+biocViews: ExperimentData, GEO, Genome, Tissue, MethylationArrayData, 
+    Homo_sapiens_Data
+Date: 2021-06-10
