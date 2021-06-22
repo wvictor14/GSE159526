@@ -28,7 +28,7 @@ meta <- data.frame(
                            "sample. Each row corresponds to a sample, and ",
                            "each column is a variable. ",
                            "Formatted as a data.frame object.")),
-    BiocVersion = c("4.1"),
+    BiocVersion = c("3.14"),
     Genome = c("hg19", "hg19", ""),
     SourceType = rep("tar.gz", 1),
     SourceUrl = rep(paste0("https://www.ncbi.nlm.nih.gov/geo/query/",
