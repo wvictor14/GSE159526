@@ -41,9 +41,9 @@ meta <- data.frame(
     Maintainer = "Victor Yuan <vyuan@bcchr.ca>",
     RDataClass = c("RGChannelSet", "matrix", "data.frame"),
     DispatchClass = c(rep("Rda",1)),
-    RDataPath = c(paste0("GSE159526_raw_rgset.Rda"),
-                  "GSE159526_processed_matrix.Rda",
-                  "GSE159526_phenodata_df.Rda"),
+    RDataPath = c(paste0("GSE159526/0.99.0/GSE159526_raw_rgset.Rda"),
+                  "GSE159526/0.99.0/GSE159526_processed_matrix.Rda",
+                  "GSE159526/0.99.0/GSE159526_phenodata_df.Rda"),
     Tags = "",
     Notes = paste0("")
 )
