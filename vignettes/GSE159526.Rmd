@@ -16,8 +16,10 @@ date: "`r doc_date()`"
 package: "`r pkg_ver('GSE159526')`"
 vignette: >
   %\VignetteIndexEntry{Introduction to GSE159526}
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}  
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include = FALSE}
@@ -63,16 +65,13 @@ citation("GSE159526")
 # Quick start to using to `GSE159526`
 
 ```{r "start", message=FALSE}
-library("GSE159526")
+eh <- ExperimentHub()
+query(eh, "GSE159526")
+
+GSE159526_rgset <- eh[['EH6130']]
+GSE159526_data <- eh[['EH6131']]
+GSE159526_pdat <- eh[['EH6132']]
 ```
-
-Edit this as you see fit =)
-
-Here is an example of you can cite your package inside the vignette:
-
-* `r Biocpkg("GSE159526")` `r Citep(bib[["GSE159526"]])`
-
-
 
 # Reproducibility
 
@@ -87,7 +86,6 @@ The `r Biocpkg("GSE159526")` package `r Citep(bib[["GSE159526"]])` was made poss
 * `r CRANpkg("testthat")` `r Citep(bib[["testthat"]])`
 
 This package was developed using `r BiocStyle::Biocpkg("biocthis")`.
-
 
 Code for creating the vignette
 
@@ -124,8 +122,6 @@ library("sessioninfo")
 options(width = 120)
 session_info()
 ```
-
-
 
 # Bibliography
 
