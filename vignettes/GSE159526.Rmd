@@ -64,12 +64,28 @@ citation("GSE159526")
 
 # Quick start to using to `GSE159526`
 
-```{r "start", message=FALSE}
+There are 3 objects associated with GSE159526:
+
+**EH6130** - Raw DNA methylation data, .idat files read into r with `minfi` and saved as an `rgset` object.
+
+**EH6131** - Processed filtered DNA methylation data. Described in `r Citep(bib[["GSE159526"]])`.
+
+**EH6132** - Sample information stored as a `tibble`/`data.frame` object.
+
+
+
+```{r "start", message=FALSE, eval=FALSE}
 eh <- ExperimentHub()
 query(eh, "GSE159526")
 
-GSE159526_rgset <- eh[['EH6130']]
+# raw rgset
+library(minfi)
+GSE159526_rgset <- eh[['EH6130']] # requires minfi
+
+# normalized processed data matrix
 GSE159526_data <- eh[['EH6131']]
+
+# sample information
 GSE159526_pdat <- eh[['EH6132']]
 ```
 
@@ -87,12 +103,12 @@ The `r Biocpkg("GSE159526")` package `r Citep(bib[["GSE159526"]])` was made poss
 
 This package was developed using `r BiocStyle::Biocpkg("biocthis")`.
 
-Code for creating the vignette
+Code for creating the vignette:
 
 ```{r createVignette, eval=FALSE}
 ## Create the vignette
 library("rmarkdown")
-system.time(render("GSE159526.Rmd", "BiocStyle::html_document"))
+system.time(render(here::here("vignettes", "GSE159526.Rmd"), "BiocStyle::html_document"))
 
 ## Extract the R code
 library("knitr")
