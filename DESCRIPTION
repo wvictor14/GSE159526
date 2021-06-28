@@ -30,4 +30,6 @@ biocViews: ExperimentData, ExperimentHub, GEO, Genome, Tissue,
 Date: 2021-06-10
 Suggests: 
     BiocStyle,
-    knitr
+    knitr,
+    minfi,
+    tibble
