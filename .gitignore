@@ -8,3 +8,5 @@ inst/doc
 *.Rda
 
 GSE159526/0.99.0/
+/doc/
+/Meta/

@@ -3,3 +3,6 @@
 ^dev$
 ^LICENSE\.md$
 ^README\.Rmd$
+^GSE159526/$
+^doc$
+^Meta$

@@ -29,7 +29,13 @@ biocViews: ExperimentData, ExperimentHub, GEO, Genome, Tissue,
     MethylationArrayData, Homo_sapiens_Data
 Date: 2021-06-10
 Suggests: 
+    ExperimentHub,
     BiocStyle,
+    RefManageR,
     knitr,
+    rmarkdown,
+    testthat,
     minfi,
-    tibble
+    tibble,
+    sessioninfo
+VignetteBuilder: knitr
