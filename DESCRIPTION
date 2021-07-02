@@ -1,11 +1,11 @@
 Package: GSE159526
 Title: Placental cell DNA methylation data from GEO accession GSE159526
-Version: 0.99.1
+Version: 0.99.2
 Authors@R: 
     person(given = "Victor",
            family = "Yuan",
            role = c("aut", "cre"),
-           email = "vyuan@bcchr.ca",
+           email = "victor.2wy@gmail.com",
            comment = c(ORCID = "0000-0002-3394-998X"))
 Description: 
     19 term and 9 first trimester placental chorionic villi and matched
