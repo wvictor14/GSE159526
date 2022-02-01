@@ -20,6 +20,16 @@ and cell-sorted samples.
 
 ## Installation instructions
 
+Install ExperimentHub to access the data
+
+```{r, eval=FALSE}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+Biocmanager::install("ExperimentHub")
+```
+
+
 ## Citation
 
 Yuan, V., Hui, D., Yin, Y. et al. Cell-specific characterization of the placental methylome. BMC Genomics 22, 6 (2021). https://doi.org/10.1186/s12864-020-07186-6

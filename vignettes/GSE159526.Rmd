@@ -68,6 +68,16 @@ citation("GSE159526")
 
 # Quick start to using to `GSE159526`
 
+Install the R packages minfi and ExperimentHub:
+
+```{r, eval = FALSE}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+Biocmanager::install("ExperimentHub")
+BiocManager::install("minfi")
+```
+
 There are 3 objects associated with GSE159526:
 
 **EH6130** - Raw DNA methylation data, .idat files read into r with `minfi` and 
@@ -79,6 +89,8 @@ saved as an `rgset` object.
 **EH6132** - Sample information stored as a `tibble`/`data.frame` object.
 
 ```{r "start", message=FALSE, eval=FALSE}
+library(ExperimentHub)
+
 eh <- ExperimentHub()
 query(eh, "GSE159526")
 

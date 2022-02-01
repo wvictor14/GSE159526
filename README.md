@@ -8,6 +8,15 @@ chorionic villi and cell-sorted samples.
 
 ## Installation instructions
 
+Install ExperimentHub to access the data
+
+``` r
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+Biocmanager::install("ExperimentHub")
+```
+
 ## Citation
 
 Yuan, V., Hui, D., Yin, Y. et al. Cell-specific characterization of the
@@ -20,23 +29,6 @@ Please run this yourself to check for any updates on how to cite
 
 ``` r
 print(citation("GSE159526"), bibtex = TRUE)
-#> 
-#> Yuan V, Hui D, Penaherrera M, Beristain A, Robinson W (2021).
-#> "Cell-specific characterization of the placental methylome." _BMC
-#> Genomics_. doi: 10.1186/s12864-020-07186-6 (URL:
-#> https://doi.org/10.1186/s12864-020-07186-6), <URL:
-#> https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-07186-6>.
-#> 
-#> A BibTeX entry for LaTeX users is
-#> 
-#>   @Article{,
-#>     title = {Cell-specific characterization of the placental methylome},
-#>     author = {Victor Yuan and Desmond Hui and Maria S. Penaherrera and Alexander G. Beristain and Wendy P. Robinson},
-#>     year = {2021},
-#>     journal = {BMC Genomics},
-#>     doi = {10.1186/s12864-020-07186-6},
-#>     url = {https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-07186-6},
-#>   }
 ```
 
 Please note that the `GSE159526` was only made possible thanks to many
