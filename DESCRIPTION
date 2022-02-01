@@ -1,6 +1,6 @@
 Package: GSE159526
 Title: Placental cell DNA methylation data from GEO accession GSE159526
-Version: 1.1.0
+Version: 1.1.1
 Authors@R: 
     person(given = "Victor",
            family = "Yuan",
